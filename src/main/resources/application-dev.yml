@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: 'jdbc:mysql://localhost:3306/blogserver?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false'
+    username: root
+    password: root
+  redis:
+    port: 6379
+    database: 0
+    host: localhost
+
+
+logging:
+  level:
+    root: warn
+    com:
+      example: debug
+  pattern:
+    console: '%-5level %C.%M[%line] - %msg%n'
+
+setting:
+  path: blogsetting/blog.setting
